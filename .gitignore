@@ -1,0 +1,8 @@
+/doc/
+/Meta/
+*.o
+*.so
+*.dll
+*.dylib
+.Rproj.user
+_codeql_detected_source_root

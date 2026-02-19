@@ -1,0 +1,47 @@
+Package: CompGEBLUP
+Title: Comprehensive Genomic Prediction with Multi-Trait GBLUP
+Version: 1.0
+Authors@R: 
+    person("Muhammad", "Kamran", email = "kamran@zju.edu.cn", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-1763-7536"))
+Description: A complete toolkit for genomic selection including additive, 
+    dominance, epistatic effects, GxE interactions, multi-trait selection, 
+    cross-validation, and GWAS. Features an independent REML-based mixed model 
+    engine with EMMA-style efficient algorithms, Henderson EM-REML with full 
+    trace-corrected variance component updates, exact REML log-likelihood, and 
+    fast C++ matrix operations using RcppArmadillo. Implements proper BLUP 
+    equations for prediction of untrained individuals. Supports custom 
+    user-defined relationship matrices (reaction norm, combined, RKHS kernels), 
+    differential per-matrix ridge regularisation, and QTL-aware GBLUP for 
+    separating major QTL effects from polygenic background.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 4.0.0)
+Imports:
+    Rcpp (>= 1.0.0),
+    Matrix,
+    methods,
+    stats,
+    graphics,
+    grDevices,
+    utils
+LinkingTo: 
+    Rcpp,
+    RcppArmadillo
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    ggplot2 (>= 3.4.0),
+    dplyr,
+    ape,
+    scatterplot3d,
+    plotly,
+    ggtree
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/Dr-Kamran/CompGEBLUP
+BugReports: https://github.com/Dr-Kamran/CompGEBLUP/issues

@@ -1,0 +1,5 @@
+## Makevars for CompGEBLUP package
+## Supports RcppArmadillo with OpenMP parallelization
+
+PKG_CXXFLAGS = $(SHLIB_OPENMP_CXXFLAGS) -I../inst/include
+PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS) $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)

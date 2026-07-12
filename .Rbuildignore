@@ -1,0 +1,10 @@
+^doc$
+^Meta$
+^_codeql_detected_source_root$
+^\.github$
+^README\.md$
+^LICENSE\.md$
+^PACKAGE_STRUCTURE\.txt$
+^HOW_TO_USE\.md$
+^QUICK_REFERENCE\.md$
+^USAGE_GUIDE\.md$
